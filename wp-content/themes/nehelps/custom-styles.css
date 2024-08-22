@@ -1,0 +1,32 @@
+/* Custom styles */
+.primary-btn::after {
+    content: "▼";
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    transform: scale(0.6);
+    transition: color 0.3s ease;
+    color: inherit;
+  }
+  
+  .primary-btn:hover::after {
+    
+  }
+
+  .primary-btn::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    color: inherit;
+    width: 0px;
+    display: block;
+    transition: all .25s;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color:inherit;
+
+  }
+
+  .primary-btn:hover::before {
+    width: 100%;
+  }
